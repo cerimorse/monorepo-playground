@@ -21,7 +21,4 @@ export const config = defineConfig([
   pluginReactHooks.configs.flat.recommended,
 ]);
 
-export const configWithPrettier = defineConfig([
-  config,
-  eslintConfigPrettier,
-]);
+export const configWithPrettier = defineConfig([config, eslintConfigPrettier]);

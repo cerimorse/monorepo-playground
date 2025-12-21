@@ -6,17 +6,9 @@ import { config as reactConfig } from "./configs/react.js";
 
 export const config = defineConfig([
   ...reactConfig,
-  globalIgnores([
-    ".next/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
-  ]),
+  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
   nextPlugin.configs.recommended,
-  nextPlugin.configs["core-web-vitals"]
+  nextPlugin.configs["core-web-vitals"],
 ]);
 
-export const configWithPrettier = defineConfig([
-  config,
-  eslintConfigPrettier,
-]);
+export const configWithPrettier = defineConfig([config, eslintConfigPrettier]);

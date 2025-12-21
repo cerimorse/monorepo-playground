@@ -3,6 +3,10 @@
   "tasks": {
     "check-types": {
       "dependsOn": ["^check-types"]
-    }
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "//#lint:root": {}
   }
 }

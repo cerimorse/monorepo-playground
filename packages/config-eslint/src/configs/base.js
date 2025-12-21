@@ -16,9 +16,6 @@ export const config = defineConfig([
       "turbo/no-undeclared-env-vars": "error",
     },
   },
-])
-
-export const configWithPrettier = defineConfig([
-  config,
-  eslintConfigPrettier,
 ]);
+
+export const configWithPrettier = defineConfig([config, eslintConfigPrettier]);
