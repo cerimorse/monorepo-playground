@@ -1,8 +1,7 @@
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextPlugin from "@next/eslint-plugin-next";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
-
-import { config as reactConfig } from "./configs/react.js";
+import { config as reactConfig } from "./react.js";
 
 export const config = defineConfig([
   ...reactConfig,
